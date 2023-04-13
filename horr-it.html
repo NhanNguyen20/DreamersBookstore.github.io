@@ -1,0 +1,81 @@
+<!-- 
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Le Thu Nhan
+ID: 3932151
+Acknowledgement: 
+1. amazon.com. (n.d.). Books at Amazon. https://www.amazon.com/books-used-books-textbooks/b?ie=UTF8&node=283155
+2. eBooks.com. (n.d.). Buy Fiction, Non-Fiction, and Textbooks Online. https://www.ebooks.com/en-vn/ -->
+
+
+<!-- Page type: book detail -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
+    <title>Book Detail</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
+        <nav class="nav header-nav">
+            <a href="./index.html">Home</a>
+            <a href="./fiction.html">Fiction</a>
+            <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="">Other Books</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="./index.html">Home</a> <span>></span>
+            <a href="./fiction.html">Fiction</a> 
+            <span>> It</span>
+        </div>
+        <div class="book-info basic">
+            <div class="book-image"><img src="./images1/horr-it.jpeg" alt="'It' Book"></div>
+            <div class="small-imgs">    <!-- container for small images -->
+                <img src="./images1/sml-horr-it.webp" alt="Book's small image">
+                <img src="./images1/sml-horr-it.jpg" alt="Book's small image">
+                <img src="./images1/sml-horr-it-collection.jpeg" alt="Book's small image">
+            </div>
+            <div class="cart">
+                <p class="price">$12.99</p>
+                <button>Add to cart</button>
+            </div>
+        </div>
+        <div class="book-info detail">
+            <p><h2>It</h2>
+                by <span class="author">Stephen King</span>
+            </p>
+            <h4>Book Description</h4>
+            <p>
+                Stephen King’s terrifying, classic number one New York Times best seller, 
+                “a landmark in American literature” (Chicago Sun-Times) - about seven adults who 
+                return to their hometown to confront a nightmare they had first stumbled on as teenagers…an evil without a name: It. <br>
+                Welcome to Derry, Maine. It’s a small city, a place as hauntingly familiar as your own hometown. 
+                Only in Derry the haunting is real. <br>
+                They were seven teenagers when they first stumbled upon the horror. 
+                Now they are grown-up men and women who have gone out into the big world to gain success and happiness. 
+                But the promise they made 28 years ago calls them reunite in the same place where, as teenagers, 
+                they battled an evil creature that preyed on the city’s children. Now, children are being murdered again, 
+                and their repressed memories of that terrifying summer return as they prepare to once again battle the monster 
+                lurking in Derry’s sewers.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <nav class="nav footer-nav">
+            <a href="">About Us</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms</a>
+            <a href="">Copyright</a>
+            <a href="./contact.html">Contact Us</a>
+        </nav>
+    </footer>
+</body>
+</html>
