@@ -11,6 +11,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -19,77 +20,92 @@ Acknowledgement: Acknowledge the resources that you use here. -->
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
-
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
         <h1>Fiction Books</h1>
-        <div class="sub-category horror">
-            <a href=""><h2>Horror</h2></a>
-            <a href="./horr-hannibal.html">
-                <img src="./images1/horr-hannibal.jpeg" alt="'Hannibal' Book">
-                <p>Hannibal</p>
-                <p>$7.05</p>
-            </a>
-            <a href="./horr-it.html">
-                <img src="./images1/horr-it.jpeg" alt="'It' Book">
-                <p>It</p>
-                <p>$12.99</p>
-            </a>    
-            <a href="./horr-coraline.html">
-                <img src="./images1/horr-coraline.jpeg" alt="'Coraline' Book">
-                <p>Coraline</p>
-                <p>$7.05</p>
-            </a>
+        <div class="category horror">
+            <a href=""><h2 class="category-title">Horror</h2></a>
+            <div class="book-container">
+                <a class="item" href="./horr-hannibal.html">
+                    <img src="./images1/horr-hannibal.jpeg" alt="'Hannibal' Book">
+                    <p><span class="book-title">Hannibal</span></p>
+                    <p>$7.05</p>
+                </a>
+                <a class="item" href="./horr-it.html">
+                    <img src="./images1/horr-it.jpeg" alt="'It' Book">
+                    <p><span class="book-title">It</span></p>
+                    <p>$12.99</p>
+                </a>    
+                <a class="item" href="./horr-coraline.html">
+                    <img src="./images1/horr-coraline.jpeg" alt="'Coraline' Book">
+                    <p><span class="book-title">Coraline</span></p>
+                    <p>$7.05</p>
+                </a>
+            </div>
+            
         </div>
 
         <div class="category fantasy">
-            <a href=""><h2>Fantasy</h2></a>
-            <a href="./fan-eye-of-world.html">
-                <img src="./images1/fts-eye-of-world.jpeg" alt="'The Eye of the World' Book">
-                <p>The Eye of the World</p>
-                <p>$8.95</p>
-            </a>
-            <a href="./fan-haroun-sea.html">
-                <img src="./images1/fts-haroun-sea.jpeg" alt="'Haroun and the Sea of Stories' Book">
-                <p>Haroun and the Sea of Stories</p>
-                <p>$9.06</p>
-            </a>    
-            <a href="./fan-buried-giant.html">
-                <img src="./images1/fts-buried-giant.jpeg" alt="'The Buried Giant' Book">
-                <p>The Buried Giant</p>
-                <p>$12.54</p>
-            </a>
+            <a href=""><h2 class="category-title">Fantasy</h2></a>
+            <div class="book-container">
+                <a class="item" href="./fan-eye-of-world.html">
+                    <img src="./images1/fts-eye-of-world.jpeg" alt="'The Eye of the World' Book">
+                    <p><span class="book-title">The Eye of the World</p>
+                    <p>$8.95</p>
+                </a>
+                <a class="item" href="./fan-haroun-sea.html">
+                    <img src="./images1/fts-haroun-sea.jpeg" alt="'Haroun and the Sea of Stories' Book">
+                    <p><span class="book-title">Haroun and the Sea of Stories</p>
+                    <p>$9.06</p>
+                </a>    
+                <a class="item" href="./fan-buried-giant.html">
+                    <img src="./images1/fts-buried-giant.jpeg" alt="'The Buried Giant' Book">
+                    <p><span class="book-title">The Buried Giant</p>
+                    <p>$12.54</p>
+                </a>
+            </div>
         </div>
 
         <div class="category science-fic">
-            <a href=""><h2>Science Fiction</h2></a>
-            <a href="./sci-artificial-cond.html">
-                <img src="./images1/sci-artificial-condition.jpeg" alt="'Artificial Condition' Book">
-                <p>Artificial Condition</p>
-                <p>$12.39</p>
-            </a>
-            <a href="./sci-harrow-ninth.html">
-                <img src="./images1/sci-harrow-ninth.jpeg" alt="'Harrow the Ninth' Book">
-                <p>Harrow the Ninth</p>
-                <p>$12.99</p>
-            </a>    
-            <a href="./sci-fated-sky.html">
-                <img src="./images1/sci-fated-sky.jpeg" alt="'The Fated Sky' Book">
-                <p>The Fated Sky</p>
-                <p>$11.59</p>
-            </a>
+            <a href=""><h2 class="category-title">Science Fiction</h2></a>
+            <div class="book-container">
+                <a class="item" href="./sci-artificial-cond.html">
+                    <img src="./images1/sci-artificial-condition.jpeg" alt="'Artificial Condition' Book">
+                    <p><span class="book-title">Artificial Condition</p>
+                    <p>$12.39</p>
+                </a>
+                <a class="item" href="./sci-harrow-ninth.html">
+                    <img src="./images1/sci-harrow-ninth.jpeg" alt="'Harrow the Ninth' Book">
+                    <p><span class="book-title">Harrow the Ninth</p>
+                    <p>$12.99</p>
+                </a>    
+                <a class="item" href="./sci-fated-sky.html">
+                    <img src="./images1/sci-fated-sky.jpeg" alt="'The Fated Sky' Book">
+                    <p><span class="book-title">The Fated Sky</p>
+                    <p>$11.59</p>
+                </a>
+            </div>
         </div>
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

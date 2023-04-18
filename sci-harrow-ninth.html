@@ -15,6 +15,7 @@ Acknowledgement:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -23,13 +24,18 @@ Acknowledgement:
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
@@ -38,37 +44,44 @@ Acknowledgement:
             <a href="./fiction.html">Fiction</a> 
             <span>> Harrow the Ninth</span>
         </div>
-        <div class="book-info basic">
-            <div class="book-image"><img src="./images1/sci-harrow-ninth.jpeg" alt="'Harrow the Ninth' Book"></div>
-            <div class="small-imgs">    <!-- container for small images -->
-                <img src="./images1/sml-sci-harrow-ninth.jpeg" alt="Book's small image">
-                <img src="./images1/sml-sci-harrow-back.jpeg" alt="Book's small image">
-                <img src="./images1/sml-sci-harrow-collection.webp" alt="Book's small image">
+        <div class="bookdetail-wrapper">
+            <div class="book-info basic-info">
+                <div class="book-image"><img src="./images1/sci-harrow-ninth.jpeg" alt="'Harrow the Ninth' Book"></div>
+                <div class="small-imgs">    <!-- container for small images -->
+                    <img src="./images1/sml-sci-harrow-ninth.jpeg" alt="Book's small image">
+                    <img src="./images1/sml-sci-harrow-back.jpeg" alt="Book's small image">
+                    <img src="./images1/sml-sci-harrow-collection.webp" alt="Book's small image">
+                </div>
+                <div class="cart">
+                    <p class="price">$12.99</p>
+                    <button>Add to cart</button>
+                </div>
             </div>
-            <div class="cart">
-                <p class="price">$12.99</p>
-                <button>Add to cart</button>
+            <div class="book-info detail-info">
+                <p><h2>Harrow the Ninth</h2>
+                    by <span class="author">Tamsyn Muir</span>
+                </p>
+                <h4>Book Description</h4>
+                <p>
+                    After rocking the cosmos with her deathly debut, Tamsyn Muir continues the story of the penumbral 
+                    Ninth House in Harrow the Ninth, a mind-twisting puzzle box of mystery, murder, magic, and mayhem. 
+                    Nothing is as it seems in the halls of the Emperor, and the fate of the galaxy rests on one woman's shoulders.  <br>
+                    Harrowhark Nonagesimus, last necromancer of the Ninth House, has been drafted by her Emperor to fight an 
+                    unwinnable war. Side-by-side with a detested rival, Harrow must perfect her skills and become an angel of undeath — 
+                    but her health is failing, her sword makes her nauseous, and even her mind is threatening to betray her.    <br>
+                    Sealed in the gothic gloom of the Emperor's Mithraeum with three unfriendly teachers, hunted by the mad ghost of a murdered planet, 
+                    Harrow must confront two unwelcome questions: is somebody trying to kill her? And if they succeeded, would the universe be better off?
+                </p>
             </div>
         </div>
-        <div class="book-info detail">
-            <p><h2>Harrow the Ninth</h2>
-                by <span class="author">Tamsyn Muir</span>
-            </p>
-            <h4>Book Description</h4>
-            <p>
-                After rocking the cosmos with her deathly debut, Tamsyn Muir continues the story of the penumbral 
-                Ninth House in Harrow the Ninth, a mind-twisting puzzle box of mystery, murder, magic, and mayhem. 
-                Nothing is as it seems in the halls of the Emperor, and the fate of the galaxy rests on one woman's shoulders.  <br>
-                Harrowhark Nonagesimus, last necromancer of the Ninth House, has been drafted by her Emperor to fight an 
-                unwinnable war. Side-by-side with a detested rival, Harrow must perfect her skills and become an angel of undeath — 
-                but her health is failing, her sword makes her nauseous, and even her mind is threatening to betray her.    <br>
-                Sealed in the gothic gloom of the Emperor's Mithraeum with three unfriendly teachers, hunted by the mad ghost of a murdered planet, 
-                Harrow must confront two unwelcome questions: is somebody trying to kill her? And if they succeeded, would the universe be better off?
-            </p>
-        </div>
+        
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

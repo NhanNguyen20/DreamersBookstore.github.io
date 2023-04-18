@@ -11,6 +11,7 @@ Acknowledgement: Acknowledge the resources that you use here. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -19,79 +20,90 @@ Acknowledgement: Acknowledge the resources that you use here. -->
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
-
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
         <h1>Non-Fiction Books</h1>
-        <div class="sub-category tech">
-            <a href=""><h2>Technology</h2></a>
-            <a href="./tech-clean-code.html">
-                <img src="./images/tech-CleanCode.jpeg" alt="'Clean Code' book">
-                <p><span class="book-title">Clean code</span></p>
-                <p>$37.99</p>
-            </a>
-            <a href="./tech-Java-book.html">
-                <img src="./images/tech-java-book.jpeg" alt="'Head First Java' Book">
-                <p><span class="book-title">Head First Java</span></p>
-                <p>$40.22</p>
-            </a>    
-            <a href="./tech-web-book.html">
-                <img src="./images/tech-web-book.jpeg" alt="">
-                <p><span class="book-title">Learning Responsive Web Design: A Beginner's Guide</span></p>
-                <p>$20.04</p>
-            </a>
+        <div class="category tech">
+            <a href="#tech"><h2 class="category-title">Technology</h2></a>
+            <div class="book-container">
+                <a class="item" href="./tech-clean-code.html">
+                    <img src="./images/tech-CleanCode.jpeg" alt="'Clean Code' book">
+                    <p><span class="book-title">Clean code</span></p>
+                    <p>$37.99</p>
+                </a>
+                <a class="item" href="./tech-head-java.html">
+                    <img src="./images/tech-java-book.jpeg" alt="'Head First Java' Book">
+                    <p><span class="book-title">Head First Java</span></p>
+                    <p>$40.22</p>
+                </a>    
+                <a class="item" href="./tech-web-design.html">
+                    <img src="./images/tech-web-book.jpeg" alt="">
+                    <p><span class="book-title">Learning Responsive Web Design</span></p>
+                    <p>$20.04</p>
+                </a>
+            </div>
         </div>
 
         <div class="category business">
-            <a href=""><h2>Business</h2></a>
-            <a href="./bussi-dare-lead.html">
-                <img src="images/bussi-DareLead.webp" alt="'Dare to lead' book">
-                <p><span class="book-title">Dare to Lead</span></p>
-                <p>$17.08</p>
-            </a>
-            <a href="./bussi-48-laws-power.html">
-                <img src="./images/bussi-48-laws-power.jpeg" alt="'The 48 Laws Of Power' Book">
-                <p><span class="book-title">The 48 Laws Of Power</span></p>
-                <p>$14.00</p>
-            </a>    
-            <a href="./bussi-psy-of-money.html">
-                <img src="./images/bussi-psy-money.webp" alt="'The Psychology of Money' Book">
-                <p><span class="book-title">The Psychology of Money</span></p>
-                <p>$13.00</p>
-            </a>
+            <a href="#business"><h2 class="category-title">Business</h2></a>
+            <div class="book-container">
+                <a class="item" href="./bussi-dare-lead.html">
+                    <img src="images/bussi-DareLead.webp" alt="'Dare to lead' book">
+                    <p><span class="book-title">Dare to Lead</span></p>
+                    <p>$17.08</p>
+                </a>
+                <a class="item" href="./bussi-48-laws-power.html">
+                    <img src="./images/bussi-48-laws-power.jpeg" alt="'The 48 Laws Of Power' Book">
+                    <p><span class="book-title">The 48 Laws Of Power</span></p>
+                    <p>$14.00</p>
+                </a>    
+                <a class="item" href="./bussi-psy-of-money.html">
+                    <img src="./images/bussi-psy-money.webp" alt="'The Psychology of Money' Book">
+                    <p><span class="book-title">The Psychology of Money</span></p>
+                    <p>$13.00</p>
+                </a>
+            </div>
         </div>
 
         <div class="category self-help">
-            <a href=""><h2>Self-Help</h2></a>
-            <a href="./selfH-atomic-habits.html">
-                <img src="./images/selfH-atomic-habits.webp" alt="'Atomic Habits' Book">
-                <p><span class="book-title">Atomic Habits</span></p>
-                <p>$18.09</p>
-            </a>
-            <a href="./selfH-panic-button.html">
-                <div class="book-image"><img src="./images/selfH-panic-button.jpeg" alt="'The Panic Button Book' Book"></div>
-                <p><span class="book-title">The Panic Button Book</span></p>
-                <p>$11.00</p>
-            </a>    
-            <a href="./selfH-power-now.html">
-                <img src="./images/selfH-power-now.jpeg" alt="'The Power of Now' Book">
-                <p><span class="book-title">The Power of Now</span></p>
-                <p>$15.05</p>
-            </a>
+            <a href="#self-help"><h2 class="category-title">Self-Help</h2></a>
+            <div class="book-container">
+                <a class="item" href="./selfH-atomic-habits.html">
+                    <img src="./images/selfH-atomic-habits.webp" alt="'Atomic Habits' Book">
+                    <p><span class="book-title">Atomic Habits</span></p>
+                    <p>$18.09</p>
+                </a>
+                <a class="item" href="./selfH-panic-button.html">
+                    <div class="book-image"><img src="./images/selfH-panic-button.jpeg" alt="'The Panic Button Book' Book"></div>
+                    <p><span class="book-title">The Panic Button Book</span></p>
+                    <p>$11.00</p>
+                </a>    
+                <a class="item" href="./selfH-power-now.html">
+                    <img src="./images/selfH-power-now.jpeg" alt="'The Power of Now' Book">
+                    <p><span class="book-title">The Power of Now</span></p>
+                    <p>$15.05</p>
+                </a>
+            </div>
         </div>
     </main>
-
-    
-
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

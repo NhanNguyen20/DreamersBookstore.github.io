@@ -15,6 +15,7 @@ Acknowledgement:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -23,11 +24,12 @@ Acknowledgement:
 </head>
 <body>
     <header>
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
         <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
         <div class="icons">
@@ -42,38 +44,45 @@ Acknowledgement:
             <a href="./non-fiction.html">Non-Fiction</a> 
             <span>> Dare to Lead</span>
         </div>
-        <div class="book-info basic">
-            <img src="images/bussi-DareLead.webp" alt="'Dare to lead' book">
-                <div class="small-imgs">    <!-- container for small images -->
-                <img src="./images/small-bs-dareLead-book.jpeg" alt="Book's small image">
-                <img src="./images/small-bs-dareLead-back.jpeg" alt="Book's small image">
-                <img src="./images/small-bs-dareLead.jpg" alt="Book's small image">
+        <div class="bookdetail-wrapper">
+            <div class="book-info basic-info">
+                <img src="images/bussi-DareLead.webp" alt="'Dare to lead' book">
+                    <div class="small-imgs">    <!-- container for small images -->
+                    <img src="./images/small-bs-dareLead-book.jpeg" alt="Book's small image">
+                    <img src="./images/small-bs-dareLead-back.jpeg" alt="Book's small image">
+                    <img src="./images/small-bs-dareLead.jpg" alt="Book's small image">
+                </div>
+                <div class="cart">
+                    <p class="price">$17.08</p>
+                    <button>Add to cart</button>
+                </div>
             </div>
-            <div class="cart">
-                <p class="price">$17.08</p>
-                <button>Add to cart</button>
+            <div class="book-info detail-info">
+                <p><h2>Dare to Lead</h2>
+                    by <span class="author">Brené Brown</span>
+                </p>
+                <h4>Book Description</h4>
+                <p>
+                    Brené Brown has taught us what it means to dare greatly, rise strong, and brave the wilderness. 
+                    Now, based on new research conducted with leaders, change makers, and culture shifters, she’s 
+                    showing us how to put those ideas into practice so we can step up and lead. 
+                </p>
+                <p>
+                    When we dare to lead, we don’t pretend to have the right answers; we stay curious and ask 
+                    the right questions. We don’t see power as finite and hoard it; we know that power becomes 
+                    infinite when we share it with others. We don’t avoid difficult conversations and situations; 
+                    we lean into vulnerability when it’s necessary to do good work.
+                </p>
             </div>
         </div>
-        <div class="book-info detail">
-            <p><h2>Dare to Lead</h2>
-                by <span class="author">Brené Brown</span>
-            </p>
-            <h4>Book Description</h4>
-            <p>
-                Brené Brown has taught us what it means to dare greatly, rise strong, and brave the wilderness. 
-                Now, based on new research conducted with leaders, change makers, and culture shifters, she’s 
-                showing us how to put those ideas into practice so we can step up and lead. 
-            </p>
-            <p>
-                When we dare to lead, we don’t pretend to have the right answers; we stay curious and ask 
-                the right questions. We don’t see power as finite and hoard it; we know that power becomes 
-                infinite when we share it with others. We don’t avoid difficult conversations and situations; 
-                we lean into vulnerability when it’s necessary to do good work.
-            </p>
-        </div>
+        
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

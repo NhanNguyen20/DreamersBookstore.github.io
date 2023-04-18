@@ -15,6 +15,7 @@ Acknowledgement:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -23,13 +24,18 @@ Acknowledgement:
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
@@ -38,35 +44,42 @@ Acknowledgement:
             <a href="./fiction.html">Fiction</a> 
             <span>> Artificial Condition</span>
         </div>
-        <div class="book-info basic">
-            <div class="book-image"><img src="./images1/sci-artificial-condition.jpeg" alt="'Artificial Condition' Book"></div>
-            <div class="small-imgs">    <!-- container for small images -->
-                <img src="./images1/sml-sci-artifi-cond.jpeg" alt="Book's small image">
-                <img src="./images1/sml-sci-artifi-collection.jpeg" alt="Book's small image">
-                <img src="./images1/sml-sci-artifi-cover.jpg
-                " alt="Book's small image">
+        <div class="bookdetail-wrapper">
+            <div class="book-info basic-info">
+                <div class="book-image"><img src="./images1/sci-artificial-condition.jpeg" alt="'Artificial Condition' Book"></div>
+                <div class="small-imgs">    <!-- container for small images -->
+                    <img src="./images1/sml-sci-artifi-cond.jpeg" alt="Book's small image">
+                    <img src="./images1/sml-sci-artifi-collection.jpeg" alt="Book's small image">
+                    <img src="./images1/sml-sci-artifi-cover.jpg
+                    " alt="Book's small image">
+                </div>
+                <div class="cart">
+                    <p class="price">$12.39</p>
+                    <button>Add to cart</button>
+                </div>
             </div>
-            <div class="cart">
-                <p class="price">$12.39</p>
-                <button>Add to cart</button>
+            <div class="book-info detail-info">
+                <p><h2>Artificial Condition</h2>
+                    by <span class="author">Martha Wells</span>
+                </p>
+                <h4>Book Description</h4>
+                <p>
+                    It has a dark past—one in which a number of humans were killed. A past that caused it to christen itself “Murderbot”. 
+                    But it has only vague memories of the massacre that spawned that title, and it wants to know more.  <br>
+                    Teaming up with a Research Transport vessel named ART (you don’t want to know what the “A” stands for), 
+                    Murderbot heads to the mining facility where it went rogue.
+                    What it discovers will forever change the way it thinks…
+                </p>
             </div>
         </div>
-        <div class="book-info detail">
-            <p><h2>Artificial Condition</h2>
-                by <span class="author">Martha Wells</span>
-            </p>
-            <h4>Book Description</h4>
-            <p>
-                It has a dark past—one in which a number of humans were killed. A past that caused it to christen itself “Murderbot”. 
-                But it has only vague memories of the massacre that spawned that title, and it wants to know more.  <br>
-                Teaming up with a Research Transport vessel named ART (you don’t want to know what the “A” stands for), 
-                Murderbot heads to the mining facility where it went rogue.
-                What it discovers will forever change the way it thinks…
-            </p>
-        </div>
+        
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

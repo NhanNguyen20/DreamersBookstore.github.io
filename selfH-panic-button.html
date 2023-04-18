@@ -15,6 +15,7 @@ Acknowledgement:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -23,13 +24,18 @@ Acknowledgement:
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
@@ -38,34 +44,41 @@ Acknowledgement:
             <a href="./non-fiction.html">Non-Fiction</a> 
             <span>> The Panic Button Book</span>
         </div>
-        <div class="book-info basic">
-            <div class="book-image"><img src="./images/selfH-panic-button.jpeg" alt="'The Panic Button Book' Book"></div>
-            <div class="small-imgs">    <!-- container for small images -->
-                <img src="./images/small-shelp-panic-btn.jpeg" alt="Book's small image">
-                <img src="./images/small-shelp-panic-btn-back.webp" alt="Book's small image">
-                <img src="./images/small-shelp-panic-btn-inside.webp" alt="Book's small image">
+        <div class="bookdetail-wrapper">
+            <div class="book-info basic-info">
+                <div class="book-image"><img src="./images/selfH-panic-button.jpeg" alt="'The Panic Button Book' Book"></div>
+                <div class="small-imgs">    <!-- container for small images -->
+                    <img src="./images/small-shelp-panic-btn.jpeg" alt="Book's small image">
+                    <img src="./images/small-shelp-panic-btn-back.webp" alt="Book's small image">
+                    <img src="./images/small-shelp-panic-btn-inside.webp" alt="Book's small image">
+                </div>
+                <div class="cart">
+                    <p class="price">$11.00</p>
+                    <button>Add to cart</button>
+                </div>
             </div>
-            <div class="cart">
-                <p class="price">$11.00</p>
-                <button>Add to cart</button>
+            <div class="book-info detail-info">
+                <p><h2>The Panic Button Book</h2>
+                    by <span class="author">Tammi Kirkness</span>
+                </p>
+                <h4>Book Description</h4>
+                <p>
+                    The Panic Button Book is a practical step-by-step guide to help you through those moments 
+                    when you feel worried or panicky. Written in everyday language and beautifully illustrated, 
+                    it is also the ideal gift for a loved one having a tough time. <br>
+                    With special sections on relationships, parenting and social unease, The Panic Button Book 
+                    captures day-to-day moments of worry and converts them into a sense of relief.
+                </p>
             </div>
         </div>
-        <div class="book-info detail">
-            <p><h2>The Panic Button Book</h2>
-                by <span class="author">Tammi Kirkness</span>
-            </p>
-            <h4>Book Description</h4>
-            <p>
-                The Panic Button Book is a practical step-by-step guide to help you through those moments 
-                when you feel worried or panicky. Written in everyday language and beautifully illustrated, 
-                it is also the ideal gift for a loved one having a tough time. <br>
-                With special sections on relationships, parenting and social unease, The Panic Button Book 
-                captures day-to-day moments of worry and converts them into a sense of relief.
-            </p>
-        </div>
+        
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>

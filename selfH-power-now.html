@@ -15,6 +15,7 @@ Acknowledgement:
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add browser tab icon -->
     <link rel="icon" href="images/ElipLogo.png" type="images/icon type">
     <!-- Link css file -->
@@ -23,13 +24,18 @@ Acknowledgement:
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
+        <input type="checkbox" id="hambur-menu"><label for="hambur-menu">☰</label>
+        <a href="index.html"><img class="logo" src="images/ElipLogo.png" alt="Bookstore's Logo"></a>
         <nav class="nav header-nav">
             <a href="./index.html">Home</a>
-            <a href="./fiction.html">Fiction</a>
             <a href="./non-fiction.html">Non-Fiction</a>
+            <a href="./fiction.html">Fiction</a>
             <a href="">Other Books</a>
         </nav>
+        <div class="icons">
+            <a href="">👤</a>
+            <a href="">🛒</a>
+        </div>
     </header>
 
     <main>
@@ -38,36 +44,43 @@ Acknowledgement:
             <a href="./non-fiction.html">Non-Fiction</a> 
             <span>> The Power of Now</span>
         </div>
-        <div class="book-info basic">
-            <div class="book-image"><img src="./images/selfH-power-now.jpeg" alt="'The Power of Now' Book"></div>
-            <div class="small-imgs">    <!-- container for small images -->
-                <img src="./images/small-shelp-power-now.jpeg" alt="Book's small image">
-                <img src="./images/small-shelp-power-back.jpg" alt="Book's small image">
-                <img src="./images/small-shelp-power-now1.webp" alt="Book's small image">
+        <div class="bookdetail-wrapper">
+            <div class="book-info basic-info">
+                <div class="book-image"><img src="./images/selfH-power-now.jpeg" alt="'The Power of Now' Book"></div>
+                <div class="small-imgs">    <!-- container for small images -->
+                    <img src="./images/small-shelp-power-now.jpeg" alt="Book's small image">
+                    <img src="./images/small-shelp-power-back.jpg" alt="Book's small image">
+                    <img src="./images/small-shelp-power-now1.webp" alt="Book's small image">
+                </div>
+                <div class="cart">
+                    <p class="price">$15.05</p>
+                    <button>Add to cart</button>
+                </div>
             </div>
-            <div class="cart">
-                <p class="price">$15.05</p>
-                <button>Add to cart</button>
+            <div class="book-info detail-info">
+                <p><h2>The Power of Now</h2>
+                    by <span class="author">Eckhart Tolle</span>
+                </p>
+                <h4>Book Description</h4>
+                <p>
+                    To make the journey into the Now we will need to leave our analytical mind and its false created self, 
+                    the ego, behind. From the very first page of Eckhart Tolle's extraordinary book, we move rapidly into 
+                    a significantly higher altitude where we breathe a lighter air. <br>
+                    We become connected to the indestructible essence of our Being, “The eternal, ever present One Life beyond 
+                    the myriad forms of life that are subject to birth and death.” Although the journey is challenging, 
+                    Eckhart Tolle uses simple language and an easy question and answer format to guide us. A word of mouth phenomenon since its first publication, 
+                    The Power of Now is one of those rare books with the power to create an experience in readers, one that can radically change their lives for the better.
+                </p>
             </div>
         </div>
-        <div class="book-info detail">
-            <p><h2>The Power of Now</h2>
-                by <span class="author">Eckhart Tolle</span>
-            </p>
-            <h4>Book Description</h4>
-            <p>
-                To make the journey into the Now we will need to leave our analytical mind and its false created self, 
-                the ego, behind. From the very first page of Eckhart Tolle's extraordinary book, we move rapidly into 
-                a significantly higher altitude where we breathe a lighter air. <br>
-                We become connected to the indestructible essence of our Being, “The eternal, ever present One Life beyond 
-                the myriad forms of life that are subject to birth and death.” Although the journey is challenging, 
-                Eckhart Tolle uses simple language and an easy question and answer format to guide us. A word of mouth phenomenon since its first publication, 
-                The Power of Now is one of those rare books with the power to create an experience in readers, one that can radically change their lives for the better.
-            </p>
-        </div>
+        
     </main>
 
     <footer>
+        <div class="logo-area">
+            <img class="footer-logo" src="images/BrandLogo.png" alt="Brand Logo">
+            <p>Brings Books To Life! <hr></p>
+        </div>
         <nav class="nav footer-nav">
             <a href="">About Us</a>
             <a href="">Privacy Policy</a>
