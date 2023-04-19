@@ -391,8 +391,9 @@ button {
         display: none;
     }
     header {
-        height: 9%;
+        height: 10%;
     }
+    /* book category setting */
     .non-fiction .book-container, .others .book-container {
         margin-right: 0;
     }
@@ -406,7 +407,10 @@ button {
         padding-left: 10%;
     }
     .book-container {
-        padding: 6% 5% 20%;
+        padding: 6% 5%;
+    }
+    .book-container p {
+        margin-left: 15%;
     }
     /* book detail setting */
     .bookdetail-wrapper {
@@ -436,6 +440,10 @@ button {
         position: relative;
         left: 150%;
     }
+    /* footer setting */
+    footer {
+        margin-top: 20%;
+    }
 }
 
 /* media query for mobile devices */
@@ -446,7 +454,7 @@ button {
     }
     main {
         position: relative;
-        top: 75px;
+        top: 70px;
     }
     header label {
         display: block;
