@@ -17,18 +17,44 @@ main {
 
 h1 {
     text-align: center;
-    padding: 5% 0 3%;
+    padding: 5% 0 2%;
 }
-
-.category-title {
-    font-size: 190%;
+.category-title, .subcategory-title {
+    font-size: 140%;
     color: #302214;
     padding-left: 7%;
     padding-bottom: 2%;
 }
-.category-title:hover {
+.category-title:hover, .subcategory-title:hover {
     color: #8c9086;
     text-decoration: overline;
+}
+.subcategory-title {
+    font-size: 190%;
+    padding-left: 9%;
+}
+.welcome {
+    color: #575a54;
+    margin: 0 10%;
+    text-align: center;
+}
+.welcome h2 {
+    margin-top: 2%;
+}
+.welcome h1 {
+    color: #45451d;
+    font-size: 250%;
+}
+.welcome p {
+    width: 100%;
+    font-size: 120%;
+    line-height: 1.7;
+}
+fieldset {
+    margin: 5% 0;
+    padding: 3% 10% 5%;
+    border-width: 5px;
+    border-color: #dcdcdc;
 }
 
 /* header setting */
@@ -186,7 +212,13 @@ header .icons a {
     filter: brightness(110%);
     transform: scale(1.1);
 }
-
+/* sub-category setting */
+.tech .book-container, .business .book-container, .self-help .book-container {
+    background-color: #cec3b2;
+}
+.horror .book-container, .fantasy .book-container, .science-fic .book-container {
+    background-color: #c8bb9e;
+}
 /* footer setting */
 footer {
     width: 100%;
@@ -208,6 +240,9 @@ footer .logo-area p {
 footer .logo-area hr {
     margin: 0 auto;
     width: 25%;
+}
+.footer-nav {
+    width: 100%;
 }
 .footer-nav a{
     margin-top: 2%;
@@ -234,7 +269,6 @@ footer .logo-area hr {
 }
 .form-wrapper h1 {
     color: #666a61;
-    text-shadow: #7a7e74;
 }
 
 .info-section {
@@ -278,51 +312,55 @@ button {
     margin: 5% 8% 15% 5%;
     padding: 6%;
     width: 90%;
-    border-radius: 2%;
+    border-radius: 1.5%;
     background-color: #cec3b2;
     box-shadow: 0 0 10px #666a61;
 }
 .basic-info {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     margin-bottom: 1.5%;
-    border-radius: 2%;
-    padding: 4% 5%;
+    border-radius: 1.5%;
+    padding: 5% 5%;
     background-color: #f5f4ef;
     box-shadow: inset 0 0 15px -5px #1e1e1e;
 }
-.basic-info .book-image img {
-    width: 450px;
-    height: 630px;
+.book-image img {
+    width: 120%;
+    height: 90%;
     box-shadow: 0 0 5px #666a61;
     border-radius: 1%;
 }
 .small-imgs {
     display: flex;
     flex-direction: column;
-    width: 180px;
-    margin-left: 3%;
+    width: 18%;
+    height: 90%;
 }
 .small-imgs img {
     margin: 1.8% 1%;
-    width: 150px;
-    height: 205px;
+    width: 70%;
+    height: 80%;
     border-style: solid;
     border-width: .8px;
     border-radius: 1%;
 }
+.small-imgs img:hover {
+    filter: brightness(110%);
+}
 .cart {
-    margin: 510px 50px 0;
-    font-size: 180%;
+    margin-top: 42%;
+    margin-right: 10%;
+    font-size: 150%;
 }
 .cart p {
     margin-left: 10%;
     padding-bottom: 2%;
 }
 .cart button {
-    width: 380px;
-    height: 80px;
-    margin: 0 2%;
+    width: 200%;
+    height: 40%;
 }
 .detail-info h2 {
     font-size: xx-large;
@@ -330,7 +368,7 @@ button {
 .detail-info h4 {
     padding: 1%;
 }
-.detail-info p {
+.detail-info .price {
     width: 100%;
     padding: 1%;
     font-size: 110%;
@@ -341,6 +379,9 @@ button {
 
 /* media query for tablet devices */
 @media (max-width: 1023px) {
+    .welcome span {
+        display: none;
+    }
     header {
         height: 9%;
     }
@@ -359,6 +400,34 @@ button {
     .book-container {
         padding: 6% 5% 20%;
     }
+    /* book detail setting */
+    .bookdetail-wrapper {
+        width: 80%;
+        margin: 5% auto 30%;
+    }
+    .basic-info {
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .book-image img {
+        max-width: 100%;
+    }
+    .small-imgs img {
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .cart {
+        margin-top: 0;
+        position: initial;
+    }
+    .cart button {
+        width: 350%;
+        height: 60%;
+    }
+    .cart .price {
+        position: relative;
+        left: 150%;
+    }
 }
 
 /* media query for mobile devices */
@@ -369,11 +438,11 @@ button {
     }
     main {
         position: relative;
+        top: 75px;
     }
     header label {
         display: block;
     }
-
     .header-nav {
         position: absolute;
         top: 100%;
@@ -381,6 +450,8 @@ button {
         background-color: #e6e4e3;
         flex-direction: column;
         display: none;
+        padding: 2% 0;
+        border: solid #c8bb9e;
     }
     .header-nav a {
         background-color: #f5f4ef;
@@ -389,7 +460,7 @@ button {
         border-style: solid;
         text-align: center;
         width: 95%;
-        margin: 1% 1%;
+        margin: 1.5% 1%;
         border-color: #8c9086;
         border-width: 1px;
     }
@@ -399,7 +470,14 @@ button {
     #hambur-menu:checked ~ .header-nav{
         display: inherit;
     }
+    header .icons a {
+        padding-right: 0;
+    }
     /* main elements setting */
+    fieldset {
+        width: 80%;
+        margin: 2% auto;
+    }
     .book-container {
         flex-direction: column;
         align-items: center;
@@ -407,5 +485,65 @@ button {
     .book-container img {
         padding-top: 10%;
         width: 90%;
+    }
+    /* book detail page setting */
+    .bookdetail-wrapper {
+        margin-bottom: 30%;
+    }
+    .basic-info {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .small-imgs {
+        flex-direction: row;
+        align-content: space-between;
+        margin: 20% 5% 5%;
+    }
+    .small-imgs img{
+        width: 130%;
+        height: 80px;
+        margin: 0 15%;
+    }
+    .book-image img {
+        max-width: 85%;
+        max-height: 60%;
+        margin: 3% 7% 25%;
+    }
+    .cart {
+        position: initial;
+        margin: auto 0;
+    }
+    .cart button {
+        width: 80%;
+    }
+    .cart .price {
+        position: initial;
+        margin-left: 45%;
+    }
+    /* form setting */
+    .info-section {
+        display: initial;
+    }
+    .info-section label, p {
+        display: block;
+        width: 100%;
+    }
+    input[type="text"], input[type ="email"], select{
+        width: 100%;
+        margin: 2% 0 4%;
+    }
+    textarea {
+        width: 100%;
+    }
+    .btn-wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    /* footer setting */
+    footer {
+        margin-top: 30%;
+    }
+    .footer-nav {
+        font-size: 80%;
     }
 }
